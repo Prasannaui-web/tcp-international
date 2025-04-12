@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+    <script>
+      // Redirect all unknown URLs to your index.html within the repo path
+      const repoName = '/tcp-international'; // change this to match your actual repo name
+      const redirectPath = location.pathname.replace(/^\/[^\/]+/, repoName);
+      location.replace(redirectPath);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting...</p>
+  </body>
+</html>
