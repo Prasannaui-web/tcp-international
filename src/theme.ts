@@ -1,0 +1,21 @@
+import { createTheme } from "@mui/material/styles";
+
+const theme = createTheme({
+  typography: {
+    fontFamily: "Nunito, sans-serif",
+  },
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: `
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&display=swap');
+        body {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+        }
+      `,
+    },
+  },
+});
+
+export default theme;
