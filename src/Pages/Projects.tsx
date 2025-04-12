@@ -14,7 +14,7 @@ import "../css/Project.css";
 
 // Assets
 import serviceViusals from "../assets/ServiceVisuals.webp";
-import clinicalVisuals from "../assets/ClinicalViusals_new.png";
+import clinicalVisuals from "../assets/ClinicalViusals_new.webp";
 import MytoLabs from "../assets/MytoLabs_Project.webp";
 
 

@@ -5,12 +5,12 @@ import {
   Card,
   Button,
 } from "@mui/material";
-import * as React from "react";
+
 import Grid from '@mui/material/Grid';
 
 import NavBar from "../components/NavBar";
 import About from "../components/About";
-import contactForm from "../components/contactForm";
+// import ContactForm from "../components/contactForm";
 import Footer from "../components/Footer";
 
 
@@ -24,7 +24,7 @@ import AnimationIcon from "../assets/VechileAnime.webp";
 import WebDevImage from "../assets/WebDevelopment_Expertise.webp";
 import WebDevIcon from "../assets/Webdevelopment.webp";
 import serviceViusals from "../assets/ServiceVisuals.webp";
-import clinicalVisuals from "../assets/ClinicalViusals_new.png";
+import clinicalVisuals from "../assets/ClinicalViusals_new.webp";
 import MytoLabs from "../assets/MytoLabs_Project.webp";
 
 
@@ -134,8 +134,8 @@ function HomePage() {
     },
   ];
 
-  const [phone, setPhone] = React.useState("");
-  const [service, setService] = React.useState("");
+  // const [phone, setPhone] = React.useState("");
+  // const [service, setService] = React.useState("");
   return (
     <>
       <NavBar />

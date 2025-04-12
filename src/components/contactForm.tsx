@@ -6,7 +6,8 @@ import * as React from "react";
 import Grid from '@mui/material/Grid';
 
 import { MenuItem, Select, TextField } from "@mui/material";
-import { MuiTelInput } from "mui-tel-input";
+import PhoneInput from 'react-phone-input-2';
+import 'react-phone-input-2/lib/material.css';
 
 function ContactForm() {
     const [phone, setPhone] = React.useState("");
@@ -21,14 +22,18 @@ function ContactForm() {
                     <TextField fullWidth label="Email address" variant="outlined" className="custom-input" />
                 </Grid>
                 <Grid item xs={12} sm={6} sx={{ mb: 1 }}>
-                    <MuiTelInput
-                        fullWidth
+
+                    <PhoneInput
+                        country={'in'}
                         value={phone}
-                        onChange={setPhone}
-                        defaultCountry="US"
-                        label="Phone"
-                        variant="outlined"
-                        className="custom-input"
+                        onChange={(value) => setPhone(value)}
+                        inputStyle={{ width: '100%' }}
+                        inputProps={{
+                            name: 'phone',
+                            required: true,
+                            autoFocus: true,
+                        }}
+                        containerStyle={{ marginBottom: '16px' }}
                     />
                 </Grid>
                 <Grid item xs={12} sm={6}>

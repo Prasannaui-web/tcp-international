@@ -10,7 +10,7 @@ import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 // Assets
 import NavLogo from "../assets/TCP LOGO.webp";
@@ -30,9 +30,9 @@ function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
-  const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
-    null
-  );
+  // const [setAnchorElUser] = React.useState<null | HTMLElement>(
+  //   null
+  // );
 
   const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
     setAnchorElNav(event.currentTarget);
@@ -42,9 +42,9 @@ function ResponsiveAppBar() {
     setAnchorElNav(null);
   };
 
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
+  // const handleCloseUserMenu = () => {
+  //   setAnchorElUser(null);
+  // };
 
   return (
     <AppBar position="relative" className="AppBar">
@@ -88,12 +88,12 @@ function ResponsiveAppBar() {
               {pages.map((navLink) => (
                 <MenuItem key={navLink.id} onClick={handleCloseNavMenu} >
                   {/* <Typography  sx={{ textAlign: "center" }}>{page}</Typography> */}
-                  <NavLink
+                  <Link
                     to={`${navLink.path.toLowerCase()}`}
                     style={{ textDecoration: "none", color: "inherit", width: "100%" }}
                   >
                     <Typography sx={{ textAlign: "center" }}>{navLink?.name}</Typography>
-                  </NavLink>
+                  </Link>
                 </MenuItem>
               ))}
             </Menu>
