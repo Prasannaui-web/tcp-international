@@ -7,12 +7,12 @@ import ServicePage from "./Pages/Services";
 import ContactPage from "./Pages/Contact";
 import CareerPage from "./Pages/Career";
 
-import "./App.css"
+import "./App.css";
 
 export default function App() {
   return (
     <div>
-      <BrowserRouter basename="/tcp-international">
+      <BrowserRouter basename="/tcp-international/">
         <Routes>
           {/* <Route index element={<HomePage />} /> */}
           <Route path="/" element={<HomePage />} />
