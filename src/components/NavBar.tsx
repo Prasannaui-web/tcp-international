@@ -19,7 +19,7 @@ import "../css/index.css"
 
 
 const pages = [
-  { name: "Home", path: "/tcp-international/", id: "001" },
+  { name: "Home", path: "/", id: "001" },
   { name: "About", path: "/about", id: "002" },
   { name: "Services", path: "/services", id: "004" },
   { name: "Projects", path: "/projects", id: "003" },
