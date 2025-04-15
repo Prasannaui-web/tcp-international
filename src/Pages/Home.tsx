@@ -37,11 +37,11 @@ import react from "../assets/softwares/New Tech Icons/physics.png";
 import node from "../assets/softwares/New Tech Icons/node-js.png";
 import angular from "../assets/softwares/New Tech Icons/Angular.png";
 import swift from "../assets/softwares/New Tech Icons/swift.png";
-import nestJs from "../assets/softwares/New Tech Icons/NestJs.png";
-import figma from "../assets/softwares/New Tech Icons/FIGMA.png";
+import nestJs from "../assets/softwares/New Tech Icons/nestJs.png";
+import figma from "../assets/softwares/New Tech Icons/figma.png";
 import unity from "../assets/softwares/New Tech Icons/unity.png";
 import php from "../assets/softwares/New Tech Icons/php.png";
-import html from "../assets/softwares/New Tech Icons/html.png";
+import html from "../assets/softwares/New Tech Icons/HTML.png";
 
 // partners Images
 
