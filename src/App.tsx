@@ -15,7 +15,7 @@ export default function App() {
       <BrowserRouter basename="/tcp-international/">
         <Routes>
           {/* <Route index element={<HomePage />} /> */}
-          <Route path="/" element={<HomePage />} />
+          <Route path="/tcp-international/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/projects" element={<ProjectPage />} />
           <Route path="/services" element={<ServicePage />} />
