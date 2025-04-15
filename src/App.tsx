@@ -13,7 +13,7 @@ import "./App.css"
 export default function App() {
   return (
     <div>
-      <Router basename="/tcp-international/">
+      <Router>
         <Routes>
           {/* <Route index element={<HomePage />} /> */}
           <Route path="/" element={<HomePage />} />
