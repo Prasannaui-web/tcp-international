@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+
 
 import HomePage from "./Pages/Home";
 import AboutPage from "./Pages/About";
@@ -12,7 +13,7 @@ import "./App.css"
 export default function App() {
   return (
     <div>
-      <BrowserRouter basename="/tcp-international/">
+      <Router basename="/tcp-international/">
         <Routes>
           {/* <Route index element={<HomePage />} /> */}
           <Route path="/" element={<HomePage />} />
@@ -22,7 +23,7 @@ export default function App() {
           <Route path="/contact-us" element={<ContactPage />} />
           <Route path="/career" element={<CareerPage />} />
         </Routes>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 }
