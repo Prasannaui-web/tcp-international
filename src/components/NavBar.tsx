@@ -19,11 +19,11 @@ import "../css/index.css"
 
 
 const pages = [
-  { name: "Home", path: "/tcp-international/", id: "001" },
-  { name: "About", path: "/tcp-international/about", id: "002" },
-  { name: "Services", path: "/tcp-international/services", id: "003" },
-  { name: "Projects", path: "/tcp-international/projects", id: "004" },
-  { name: "Career", path: "/tcp-international/career", id: "005" },
+  { name: "Home", path: "/", id: "001" },
+  { name: "About", path: "/about", id: "002" },
+  { name: "Services", path: "/services", id: "003" },
+  { name: "Projects", path: "/projects", id: "004" },
+  { name: "Career", path: "/career", id: "005" },
 ];
 
 function ResponsiveAppBar() {
