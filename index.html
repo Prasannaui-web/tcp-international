@@ -1,14 +1,34 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/assets/TCPLOGO-BLtbultR.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TCP International Inc.</title>
-    <script type="module" crossorigin src="/assets/index-D7DuxRfw.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CGxiWAXZ.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/assets/TCPLOGO-BLtbultR.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TCP International Inc.</title>
+  <script type="text/javascript" |>
+    (function (1) {
+      if (1.search[1] === "/") {
+        var decoded = 1.search.slice(1)
+          .split("&")
+          .map(function (s) {
+            return s.replace(/~and~/g, "&");
+          })
+          .join("?");
+        window.history.replaceState(
+          null,
+          null,
+          1.pathname.slice(0, -1) + decoded + 1.hash
+        );
+      }
+    })(window.location); 
+  </script>
+  <script type="module" crossorigin src="/assets/index-D7DuxRfw.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CGxiWAXZ.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
